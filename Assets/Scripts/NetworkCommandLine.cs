@@ -11,12 +11,13 @@ public class NetworkCommandLine : MonoBehaviour
    {
        netManager = GetComponentInParent<NetworkManager>();
 
-    
+    /*
        netManager.GetComponent<UnityTransport>().SetConnectionData(
         "127.0.0.1",  // The IP address is a string
         (ushort)9000, // The port number is an unsigned short
         "0.0.0.0" // The server listen address is a string.
        );
+       */
     
 
        if (Application.isEditor) return;
