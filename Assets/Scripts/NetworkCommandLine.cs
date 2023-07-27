@@ -30,6 +30,7 @@ public class NetworkCommandLine : MonoBehaviour
            {
                case "server":
                    netManager.StartServer();
+                   Debug.Log("host started");
                    break;
                case "host":
                    netManager.StartHost();
@@ -41,6 +42,8 @@ public class NetworkCommandLine : MonoBehaviour
                    break;
            }
        }
+
+       
    }
 
    private Dictionary<string, string> GetCommandlineArgs()
